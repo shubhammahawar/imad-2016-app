@@ -21,6 +21,10 @@ app.get('/article-three',function (req, res){
 res.send("article 3 is requested and is served here");
 });
 
+app.get('/article-four',function (req, res){
+res.send("Master & Mahawar will meet soon");
+});
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
