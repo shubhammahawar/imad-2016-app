@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-one',function (req, res){
-res.send("article 1 is requested and is served here");
+res.send("Sachin tendulkar will come back");
 });
 
 app.get('/article-two',function (req, res){
