@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 
-var article-1 = {
+var articleone = {
      title: 'article-1 SHUBHAM MAHAWAR',
      heading:  'ARTICLE ONE',
      date: 'SEPT 28,2016',
@@ -61,7 +61,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-1',function (req, res){
- res.send(createTemplate(article-1));
+ res.send(createTemplate(articleone));
 });
 
 app.get('/article-2',function (req, res){
