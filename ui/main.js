@@ -2,7 +2,7 @@ console.log('Loaded!');
 
 var element = document.getElementById('main-text');
 
-element.innerHTML= 'Module p5 ID cHanges';
+//element.innerHTML= 'Module p5 ID cHanges';
 
 var img = document.getElementById('madi');
 var marginLeft = 0;
