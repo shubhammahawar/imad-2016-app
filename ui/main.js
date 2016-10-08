@@ -5,15 +5,15 @@ var element = document.getElementById('main-text');
 element.innerHTML= 'Module p5 ID cHanges';
 
 var img = document.getElementById('madi');
-var marginleft = 0;
-function moveright () {
-    marginleft = marginleft + 10;
-    img.style.marginleft = marginleft+'px';
+var marginLeft = 0;
+function moveRight () {
+    marginLeft = marginLeft + 10;
+    img.style.marginLeft = marginLeft+'px';
 }
     
 
 img.onclick = function () {
     
-    var interval = setInterval(moveright,100);
+    var interval = setInterval(moveRight,100);
     
 };
