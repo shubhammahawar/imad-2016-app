@@ -7,7 +7,7 @@ element.innerHTML= 'Module p5 ID cHanges';
 var img=document.getElementById('madi');
 var marginleft = 0;
 function moveright(){
-    marginleft=marginleft+10;
+    marginleft = marginleft + 10;
     img.style.marginleft = marginleft+'px';
 }
     
