@@ -4,9 +4,9 @@ var element = document.getElementById('main-text');
 
 element.innerHTML= 'Module p5 ID cHanges';
 
-var img=document.getElementById('madi');
+var img = document.getElementById('madi');
 var marginleft = 0;
-function moveright(){
+function moveright () {
     marginleft = marginleft + 10;
     img.style.marginleft = marginleft+'px';
 }
