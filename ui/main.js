@@ -17,6 +17,7 @@ img.onclick = function () {
     var interval = setInterval(moveRight,50);
     
 };
+var button = document.getElementById('counter');
 button.onclick = function(){
      var request= new XMLHttpRequest();
     request.onreadystatechange = function(){
@@ -59,6 +60,6 @@ ul.innerHTML = list;
 };
 var nameInput = document.getElementById('name');
 var name = nameInput.value;
- request.open('GET','http://shubhammahawar.imad.hasura-app.io/submit-name?name=' +name,true);
+ request.open('GET','http://shubhammahawar.imad.hasura-app.io/submit-name?name=' + name,true);
    request.send(null);
 };
