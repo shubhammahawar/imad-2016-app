@@ -29,6 +29,16 @@ color:	#B22222;
 background-color:#E9967A;
 }
 
+ 
+header{
+    
+    background-color:#008CBA; /*blue*/
+}
+.links{
+    
+ padding-left:700px;
+}
+
 .form
 {
 padding:20px 5px 20px 25px;
