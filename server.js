@@ -55,6 +55,46 @@ var htmlTemplate = `
          <hr/>
          <h3>
             ${heading}
+     </head>
+    <body>
+        <div class= "container">
+      <div>
+            <a href= "/">Home</a>
+        </div>
+         <hr/>
+         <h3>
+            ${heading}
+         </h3>
+         <div>
+             ${date.toDateString()} 
+         </div>
+         <div>
+            ${content}
+         </div>
+          <h2>Comments</h2>
+              <div id="comment_form">
+              </div>
+              <div id="comments">
+                <center>Loading comments...</center>
+              </div>
+          </div>
+                </div>
+            </div>
+        </div>
+       </div>
+       <script type="text/javascript" src="/ui/article.js">
+       </script>
+     </body>
+   </html>
+    `;
+    return htmlTemplate;
+}
+app.get('/', function (req, res) {
+ res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+app.get('/ui/:fileName', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', req.params.fileName));
+
          </h3>
          <div>
              ${date.toDateString()} 
@@ -300,23 +340,23 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.get('/ui/blog5.jpg', function (req, res) {
+app.get('/ui/blog.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'blog.jpg'));
 });
 
-app.get('/ui/about me.jpg', function (req, res) {
+app.get('/ui/me.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'me.jpg'));
 });
 
-app.get('/ui/contact.png', function (req, res) {
+app.get('/ui/contact.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'contact.jpg'));
 });
 
-app.get('/ui/fblogo.png', function (req, res) {
+app.get('/ui/fb.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'fb.jpg'));
 });
 
-app.get('/ui/githublogo.jpg', function (req, res) {
+app.get('/ui/github.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'github.jpg'));
 });
 
