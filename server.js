@@ -8,8 +8,8 @@ var session = require('express-session');
 
 
 var config = {
-    user: 'kinzah',
-    database: 'kinzah',
+    user: 'shubhammahawar',
+    database: 'shubhammahawar',
     host: 'db.imad.hasura-app.io',
     port: '5432',
     password: process.env.DB_PASSWORD
@@ -304,20 +304,20 @@ app.get('/ui/blog5.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'blog5.jpg'));
 });
 
-app.get('/ui/about me.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'about me.jpg'));
+app.get('/ui/me.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'me.jpg'));
 });
 
-app.get('/ui/contact.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'contact.png'));
+app.get('/ui/contact.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'contact.jpg'));
 });
 
-app.get('/ui/fblogo.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'fblogo.png'));
+app.get('/ui/fb.jpg',function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'fb.jpg'));
 });
 
-app.get('/ui/githublogo.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'githublogo.jpg'));
+app.get('/ui/github.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'github.jpg'));
 });
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
