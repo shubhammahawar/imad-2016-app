@@ -301,23 +301,23 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 app.get('/ui/blog5.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'blog5.jpg'));
+  res.sendFile(path.join(__dirname, 'ui', 'blog.jpg'));
 });
 
 app.get('/ui/about me.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'about me.jpg'));
+  res.sendFile(path.join(__dirname, 'ui', 'me.jpg'));
 });
 
 app.get('/ui/contact.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'contact.png'));
+  res.sendFile(path.join(__dirname, 'ui', 'contact.jpg'));
 });
 
 app.get('/ui/fblogo.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'fblogo.png'));
+  res.sendFile(path.join(__dirname, 'ui', 'fb.jpg'));
 });
 
 app.get('/ui/githublogo.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'githublogo.jpg'));
+  res.sendFile(path.join(__dirname, 'ui', 'github.jpg'));
 });
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
